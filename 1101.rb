@@ -41,3 +41,19 @@ while index < strings.length
    index = index + 1
 end
 p new_strings
+
+
+#Start with an array of hashes and create a new array of string values from each hash's :name key.
+#For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+
+hashes = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
+strings = []
+index = 0
+while index < hashes.length
+  strings << hashes[index][:name]
+  index += 1
+end
+
+p strings
+
+
