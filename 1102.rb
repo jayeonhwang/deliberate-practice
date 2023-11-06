@@ -102,5 +102,4 @@ while numbers.length > index
     end
  index = index + 1
 end 
-
 p numbers_new
