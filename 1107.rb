@@ -67,6 +67,8 @@ p items_array
 
 items =["hello", "bye", "good mornig","hello", "bye", "good mornig","hello", "bye", "good mornig","hello", "bye", "good mornig"]
 
-count = items["hello"]
+count = {}
+
+items["hello"]
 
 puts count
