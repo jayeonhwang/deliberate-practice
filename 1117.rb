@@ -127,4 +127,3 @@ end
 nemo = Rectangle.new(15, 7)
 puts nemo.area
 
-#----- 05-custom-methods #2
