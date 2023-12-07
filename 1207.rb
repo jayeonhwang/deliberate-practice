@@ -1,8 +1,15 @@
 # Create an array to store 3 words. Then add two more words to the array and print the array on one line.
-
+array =["cat", "dog", "pig"]
+array.push("bird")
+array.push("cow")
+p array
 # Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+a = ["a", "b", "c", "d"]
+a[1] = 12
+p a
 
 # Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+
 
 # Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
 
