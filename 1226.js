@@ -38,9 +38,8 @@ let index1 = 0;
 
 while ( index1 < word.length) {
   let letter = word[index1];
-  if letter === nil
+  if (letter === nil) 
   
-
 }
 
 
