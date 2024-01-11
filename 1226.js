@@ -2,56 +2,77 @@
 // For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
 
 const pairs = [[1, 3], [8, 9], [2, 16]];
-const pairsHash = {};
-let index = 0;
+// const pairsHash = {};
+// let index = 0;
 
-while (index < pairs.length) {
-  let key = pairs[index][0];
-  let value = pairs[index][1];
-  pairsHash[key] = value;
-  index += 1;
-}
+// while (index < pairs.length) {
+//   let key = pairs[index][0];
+//   let value = pairs[index][1];
+//   pairsHash[key] = value;
+//   index += 1;
+// }
 
-console.log(pairsHash);
+// console.log(pairsHash);
 
 
 // Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
 // For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
 
-let items = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}];
-let itemsHash = {};
-let i = 0;
+// let items = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}];
+// let itemsHash = {};
+// let i = 0;
 
-while ( i < items.length) {
-  itemsHash[items[i].id] = items[i];
-  i = i + 1;
-}
+// while ( i < items.length) {
+//   itemsHash[items[i].id] = items[i];
+//   i = i + 1;
+// }
 
-console.log(itemsHash);
+// console.log(itemsHash);
 
 // Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
 // For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
 
-let word = "bookkeeper";
-let letter_frequencies = {};
-let index1 = 0;
+// let word = "bookkeeper";
+// let letter_frequencies = {};
+// let index1 = 0;
 
-while ( index1 < word.length) {
-  let letter = word[index1];
-  if (letter === nil) 
-  
-}
+// while ( index1 < word.length) {
+//   let letter = word[index1];
+//   if (letter_frequencies[letter] === undefined) {
+//     letter_frequencies[letter] = 0;
+//   }
+//   letter_frequencies[letter] += 1;
+//   index1 +=1;
+//   }
 
+// console.log(letter_frequencies);
 
 
 
 // Convert a hash into an array of arrays.
 // For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 
+// let things =  { chair: 100, book: 14};
+// let namePricePair = [];
+
+// Object.entries(things).forEach(function ([name, price]) {
+//   namePricePair.push(name,price);
+// });
+// console.log(namePricePair);
+
 
 // Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 // For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
 
+let people = {321:{name: "Alice", age: 31}, 322: {name: "Maria", age: 27}};
+let arrayPeople = [];
+
+Object.entries(people).forEach(function([id, info]) {
+  info.id = parseInt(id);
+  arrayPeople.push(info);
+});
+
+console.log(arrayPeople);
 
 // Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
 // For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
