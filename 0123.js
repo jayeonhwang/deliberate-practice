@@ -40,22 +40,42 @@ console.log(`I like ${c1}, ${c2} and ${c3}`);
 
 // Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 
-let name = window.prompt(`please enter your name: `);
-if (name === "santa") {
-  console.log("you're not santa");
-}
+// let name = window.prompt(`please enter your name: `);
+// if (name === "santa") {
+//   console.log("you're not santa");
+// }
 
 
 // Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
 
+// let title = "The Vegetarian";
+// let author = " Han Gang";
+
+// console.log(title + author);
 
 
 
 // Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
 
+let title = "The Vegetarian";
+let author = "Han Gang";
+
+console.log(`${title} ${author}`);
+
+
 
 // Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
 
+// let password = window.prompt("Please enter the password: ");
+
+// if (password === "Joshua") {
+//   console.log("Shall we play a game?")
+// }
 
 // Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
 
+let city1 = "chicago";
+let city2 = "new york";
+let city3 = "singapore";
+
+console.log(city1 + ", " + city2 + " and " + city3);
