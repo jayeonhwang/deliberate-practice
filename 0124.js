@@ -33,29 +33,29 @@
 // Start with an array of hashes and create a new array of string values from each hash's :name key.
 // For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
-let people = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }];
-let names = [];
-let i = 0;
-while (i < people.length) {
-  let person = people[i].name;
-  names.push(person);
-  i += 1;
-}
+// let people = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }];
+// let names = [];
+// let i = 0;
+// while (i < people.length) {
+//   let person = people[i].name;
+//   names.push(person);
+//   i += 1;
+// }
 
-console.log(names);
+// console.log(names);
 
 
 // Start with an array of numbers and create a new array with each number plus 7.
 // For example, [1, 2, 3] becomes [8, 9, 10].
 
-let numbers = [1, 2, 3];
-let newNumbers = [];
+// let numbers = [1, 2, 3];
+// let newNumbers = [];
 
-numbers.forEach(function (number) {
-  newNumbers.push(number + 7);
-});
+// numbers.forEach(function (number) {
+//   newNumbers.push(number + 7);
+// });
 
-console.log(newNumbers);
+// console.log(newNumbers);
 
 
 
@@ -75,15 +75,41 @@ console.log(lengths);
 // Start with an array of hashes and create a new array of number values from each hash's :age key.
 // For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
+let info = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }];
+let ages = [];
+
+info.forEach(function (person) {
+  ages.push(person.age);
+});
+
+console.log(ages);
+
 
 
 // Start with an array of numbers and create a new array with each number divided by 2.
 // For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
+let numbers = [1, 2, 3];
+let divided = [];
+
+numbers.forEach(function (number) {
+  divided.push(number / 2);
+});
+
+console.log(divided);
 
 
 // Start with an array of strings and create a new array with each string's first letter only.
 // For example, ["hello", "goodbye"] becomes ["h", "g"].
+
+let words = ["hello", "goodbye"];
+let firstLetter = [];
+
+words.forEach(function (word) {
+  firstLetter.push(word[0]);
+});
+
+console.log(firstLetter);
 
 
 
@@ -91,8 +117,25 @@ console.log(lengths);
 // For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
 
+let people = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }];
+let aInfo = [];
+
+people.forEach(function (p) {
+  aInfo.push(p.age);
+});
+console.log(aInfo);
+
+
 
 // Start with an array of numbers and create a new array with each number converted into a string.
 // For example, [1, 2, 3] becomes ["1", "2", "3"].
 
 
+let digits = [1, 2, 3];
+let sDigits = [];
+
+digits.forEach(function (digit) {
+  sDigits.push(digit.toString());
+});
+
+console.log(sDigits);
