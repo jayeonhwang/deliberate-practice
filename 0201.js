@@ -124,9 +124,64 @@ car.carInfo();
 
 // Write a Point class with attributes and reader / writer methods for x, y, and z coordinates.Then write a method that returns true if all 3 numbers are positive, otherwise it returns false.
 
+class Point {
+  constructor(x, y, z) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+  }
+
+  positive() {
+    return this.x >= 0 && this.y >= 0 && this.z >= 0;
+  }
+}
+
+let point = new Point(2, 3, 4);
+console.log(point.positive());
+
+let negPoint = new Point(-1, 7, 8);
+
+console.log(negPoint.positive());
+
+
 
 // Write a Book class with attributes and reader / writer methods for title, author, and year.Then write a method that returns "Classic" if the book is older than 2000, otherwise it returns "Modern".
+
+class Book {
+  constructor(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
+
+  checkYear() {
+    if (this.year <= 2000) {
+      console.log("Classic");
+    } else {
+      console.log("Modern");
+    }
+  }
+}
+
+let book = new Book("the housemaid", "Freida McFadden", 2022);
+
+book.checkYear();
 
 
 // Write a Plant class with attributes and reader / writer methods for name, size, and price.Then write a method that prints out the attributes in a single sentence.
 
+class Plant {
+  constructor(name, size, price) {
+    this.name = name;
+    this.size = size;
+    this.price = price;
+  }
+
+  singleSentence() {
+    console.log(`${this.name}, size :${this.size}, price; $${this.price}`);
+  }
+}
+
+let plant = new Plant("lemon tree", "2ft", 70);
+
+plant.singleSentence();
