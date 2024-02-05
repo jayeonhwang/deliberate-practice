@@ -73,7 +73,7 @@ if (totalOrder < 50) {
   if (membership === 'regular') {
     discount = 0.1;
   } else if (membership === 'premium') {
-    discount = 0.15
+    discount = 0.15;
   }
 }
 
