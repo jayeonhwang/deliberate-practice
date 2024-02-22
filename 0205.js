@@ -161,9 +161,44 @@
 // Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 // For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
 
+let numbers = [2, 5, 3, 1, 0, 7, 11];
+let index1 = 0;
+let result = false;
+while (index1 < numbers.length) {
+  let firstNumber = numbers[index1];
+  let index2 = 0;
+  while (index2 < numbers.length) {
+    let secondNumber = numbers[index2];
+    if (firstNumber !== secondNumber) {
+      if (firstNumber + secondNumber === 10 && result === false) {
+        result = [firstNumber, secondNumber];
+      }
+    }
+    index2 += 1;
+  }
 
+  index1 += 1;
+}
+
+console.log(result);
 
 
 // Use a nested loop to convert an array of string arrays into a single string.
 // For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
+let wordPairs = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]];
+let i1 = 0;
+let oneWord = "";
+
+while (i1 < wordPairs.length) {
+  let pair = wordPairs[i1];
+  let i2 = 0;
+  while (i2 < pair.length) {
+    let word = pair[i2];
+    oneWord = oneWord + word;
+    i2 += 1;
+  }
+  i1 += 1;
+}
+console.log(oneWord);
 
